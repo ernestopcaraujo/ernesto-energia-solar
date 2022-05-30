@@ -1,0 +1,38 @@
+<div class="container text-center mt-5">
+  <div>
+    <div class="parent inline-flex-parent" style="background-color: whitesmoke;">
+      <div class="child">
+        <div class="text-center" style="background-color: whitesmoke;">
+          <img class="imagelog" src="assets/images/login_imagem.jpg">
+        </div>
+      </div>
+      <main class="form-signin child sizebox" style="background-color: whitesmoke">
+        <!-- <form class="text-center align-center" (ngSubmit)="enviaLogin(fEmail.value,fPassword.value)"> -->
+        <form class="text-center align-center">
+          <img class="mb-4" src="assets/images/logo_devsolar.png" alt="" width="160px" height="160px">
+          <h1 class="h5 mb-3 fw-normal">Seja bem-vindo !</h1>
+          <div class="form-floating">
+            <input ngModel #fEmail="ngModel" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+              class="form-control" id="floatingInput" name="email" required>
+            <label for="floatingInput">Digite seu email</label>
+          </div>
+          <div class="form-floating">
+            <input ngModel #fPassword="ngModel" type="password" class="form-control" id="floatingPassword"
+              name="password" required>
+            <label for="floatingPassword">Digite sua senha</label>
+          </div>
+          <span *ngIf="fEmail.value=='' && fPassword.value !=''" style="color: red; font-size: smaller;">
+            O e-mail é obrigatório, em formato válido.
+          </span>
+          <span *ngIf="fEmail.value !='' && fPassword.value ==''" style="color: red; font-size: smaller;">
+            A senha é obrigatória.
+          </span>
+          <br><br>
+          <button class="w-100 btn btn-lg text-white" style="background-color: #19c894;" type="submit"
+            routerLink="/dashboard" [disabled]="fEmail.invalid || fPassword.invalid">Entrar</button>
+          <p class="text-muted">© Ernesto Araújo<br>DEVinHouse NDD Team</p>
+        </form>
+      </main>
+    </div>
+  </div>
+</div>

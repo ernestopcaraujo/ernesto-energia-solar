@@ -1,0 +1,40 @@
+{
+  "unidades": [
+    {
+      "apelido": "Condominio Novo",
+      "local": "Rua Alpha",
+      "marca": "WEG",
+      "modelo": "WegSun-7",
+      "ativo": true,
+      "id": 1
+    },
+    {
+      "apelido": "Neumarkt",
+      "local": "Centro Blumenau",
+      "marca": "WEG",
+      "modelo": "SunEnterprise",
+      "ativo": false,
+      "id": 2
+    }
+  ],
+  "geracoes": [
+    {
+      "apelido": "Condominio Novo",
+      "dataEg": "2022-03",
+      "kwGerado": 400,
+      "id": 5
+    },
+    {
+      "apelido": "g",
+      "dataEg": "2022-04",
+      "kwGerado": 400,
+      "id": 6
+    },
+    {
+      "apelido": "j",
+      "dataEg": "2022-04",
+      "kwGerado": 500,
+      "id": 7
+    }
+  ]
+}
