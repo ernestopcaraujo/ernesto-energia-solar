@@ -44,7 +44,7 @@ export class GraficoComponent implements OnInit {
     ],
     datasets: [
       {
-        data: [ 45, 59, 80, 81, 56, 55, 40, 90, 10, 15, 34, 40, 80],
+        data: [ 45, 59, 80, 81, 56, 55, 40, 90, 10, 15, 34, 40, 230],
         label: 'Últimos 12 meses',
         fill: true,
         tension: 0.5,
@@ -63,27 +63,20 @@ export class GraficoComponent implements OnInit {
   constructor(private gerService:GeracoesService) { }
 
   ngOnInit(): void {
+    this.obterGeracoes();
   }
 
   obterGeracoes(){
-    this.gerService
-    .listeGeracoes()
-    .subscribe((resposta: IGeracoes[]) => {
+    this.gerService.listeGeracoes().subscribe((resposta: IGeracoes[])=>
+    {
       this.listaGeracoes = resposta;
-      this.calcularEnergiasGeradas();
+      this.calcularEnergiasGeradas;
     });
   }
 
   calcularEnergiasGeradas(){
-    let egm22:number = 0;
-    let i:number = 0;
-    let contM22:number=0;
     
-    for(i=0;this.listaGeracoes.length<i;i++){
-      if(this.listaGeracoes[i].dataEg="2022-05"){
-        contM22 = contM22 + 1
-      }
-      console.log(contM22);
-    }
+
   }
+ 
 }

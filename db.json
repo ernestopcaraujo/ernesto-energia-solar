@@ -2,51 +2,55 @@
   "unidades": [
     {
       "apelido": "Condominio Novo",
-      "local": "Rua Alpha",
+      "local": "Rua Alpha, 23",
       "marca": "WEG",
       "modelo": "WegSun-7",
       "ativo": true,
       "id": 1
     },
     {
-      "apelido": "Neumarkt",
-      "local": "Centro Blumenau",
+      "apelido": "Shopping Brasil",
+      "local": "Avenida Nações, 157",
       "marca": "WEG",
       "modelo": "SunEnterprise",
       "ativo": true,
       "id": 2
+    },
+    {
+      "apelido": "Residencia Familiar",
+      "local": "Rua Brasil, 125",
+      "marca": "WEG",
+      "modelo": "SunHome",
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "apelido": "Galpao Obras",
+      "local": "Avenida Bari, 4567",
+      "marca": "Samsung",
+      "modelo": "S-Energy8",
+      "ativo": false,
+      "id": 4
     }
   ],
   "geracoes": [
     {
       "apelido": "Condominio Novo",
-      "dataEg": "2022-03",
-      "kwGerado": 400,
-      "id": 5
-    },
-    {
-      "apelido": "g",
-      "dataEg": "2022-04",
-      "kwGerado": 400,
-      "id": 6
-    },
-    {
-      "apelido": "j",
-      "dataEg": "2022-04",
-      "kwGerado": 500,
-      "id": 7
-    },
-    {
-      "apelido": "Condominio Novo",
       "dataEg": "2022-05",
-      "kwGerado": 100,
-      "id": 8
+      "kwGerado": 30,
+      "id": 1
     },
     {
-      "apelido": "Neumarkt",
+      "apelido": "Shopping Brasil",
       "dataEg": "2022-05",
-      "kwGerado": 300,
-      "id": 9
+      "kwGerado": 120,
+      "id": 2
+    },
+    {
+      "apelido": "Residencia Familiar",
+      "dataEg": "2022-05",
+      "kwGerado": 80,
+      "id": 3
     }
   ]
 }
