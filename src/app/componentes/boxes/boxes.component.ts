@@ -69,8 +69,6 @@ export class BoxesComponent implements OnInit {
     let media:number = 0;
     for(i=0;i<this.listaGeracoes.length;i++){
       kwGerados = kwGerados + Number(this.listaGeracoes[i].kwGerado)
-      console.log(kwGerados);
-      console.log(i);
     }
     media = Number((kwGerados/i))
     this.mediaEnergiaGerada = Number(media.toFixed()) ;

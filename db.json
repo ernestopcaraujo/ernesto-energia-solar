@@ -13,7 +13,7 @@
       "local": "Centro Blumenau",
       "marca": "WEG",
       "modelo": "SunEnterprise",
-      "ativo": false,
+      "ativo": true,
       "id": 2
     }
   ],
@@ -35,6 +35,18 @@
       "dataEg": "2022-04",
       "kwGerado": 500,
       "id": 7
+    },
+    {
+      "apelido": "Condominio Novo",
+      "dataEg": "2022-05",
+      "kwGerado": 100,
+      "id": 8
+    },
+    {
+      "apelido": "Neumarkt",
+      "dataEg": "2022-05",
+      "kwGerado": 300,
+      "id": 9
     }
   ]
 }

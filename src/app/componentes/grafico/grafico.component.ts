@@ -12,6 +12,20 @@ export class GraficoComponent implements OnInit {
 
   listaGeracoes:IGeracoes[]=[];
 
+  eGeradaMaio21:number = 0
+  eGeradaJunho21:number = 0
+  eGeradaJulho21:number = 0 
+  eGeradaAgosto21:number = 0
+  eGeradaSetembro21:number = 0 
+  eGeradaOutubro21:number = 0 
+  eGeradaNovembro21:number = 0 
+  eGeradaDezembro21:number = 0
+  eGeradaJaneiro22:number = 0 
+  eGeradaFevereiro22:number = 0
+  eGeradaMarco22:number = 0 
+  eGeradaAbril22:number = 0
+  eGeradaMaio22:number = 0
+
   public lineChartData: ChartConfiguration<'line'>['data'] = {
     labels: [
       'Mai-21',
@@ -30,7 +44,7 @@ export class GraficoComponent implements OnInit {
     ],
     datasets: [
       {
-        data: [ 45, 59, 80, 81, 56, 55, 40, 90, 10, 15, 34, 40, 80 ],
+        data: [ 45, 59, 80, 81, 56, 55, 40, 90, 10, 15, 34, 40, 80],
         label: 'Últimos 12 meses',
         fill: true,
         tension: 0.5,
@@ -56,7 +70,20 @@ export class GraficoComponent implements OnInit {
     .listeGeracoes()
     .subscribe((resposta: IGeracoes[]) => {
       this.listaGeracoes = resposta;
-      // this.calcularEnergiasGeradas();
+      this.calcularEnergiasGeradas();
     });
+  }
+
+  calcularEnergiasGeradas(){
+    let egm22:number = 0;
+    let i:number = 0;
+    let contM22:number=0;
+    
+    for(i=0;this.listaGeracoes.length<i;i++){
+      if(this.listaGeracoes[i].dataEg="2022-05"){
+        contM22 = contM22 + 1
+      }
+      console.log(contM22);
+    }
   }
 }
